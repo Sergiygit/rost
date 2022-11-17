@@ -1801,8 +1801,7 @@ body::after {
 }
 
 .popup__close {
-  text-align: right;
-  width: 100%;
+  margin-left: auto;
   margin-bottom: 0.9375rem;
 }
 
@@ -1817,7 +1816,7 @@ body::after {
 .popup__body {
   background: #1E254D;
   width: 100%;
-  max-width: 362px;
+  width: 322px;
   min-height: 394px;
   padding: 22px 21px 24px;
   overflow: hidden;
@@ -3448,7 +3447,7 @@ body::after {
 
 @media (max-width: 20em) {
   .popup__content {
-    max-width: 18.125rem;
+    max-width: 20rem;
   }
 
   .popup__button {
@@ -3999,6 +3998,10 @@ body::after {
 }
 
 @media (max-width: 29.99875em) {
+  .popup__close {
+    margin-right: -1.25rem;
+  }
+
   .dream__items-dream {
     grid-template-columns: repeat(auto-fit, minmax(205px, 320px));
     -webkit-box-pack: center;
@@ -4008,15 +4011,15 @@ body::after {
 }
 
 @media (min-width: 20em) and (max-width: 73.125em) {
-@supports (max-width: clamp( 18.125rem , 16.4308823529rem  +  8.4705882353vw , 22.625rem )) {
+@supports (max-width: clamp( 20rem , 19.0117647059rem  +  4.9411764706vw , 22.625rem )) {
     .popup__content {
-      max-width: clamp( 18.125rem , 16.4308823529rem  +  8.4705882353vw , 22.625rem );
+      max-width: clamp( 20rem , 19.0117647059rem  +  4.9411764706vw , 22.625rem );
     }
 }
 
-@supports not (max-width: clamp( 18.125rem , 16.4308823529rem  +  8.4705882353vw , 22.625rem )) {
+@supports not (max-width: clamp( 20rem , 19.0117647059rem  +  4.9411764706vw , 22.625rem )) {
     .popup__content {
-      max-width: calc(18.125rem + 4.5 * (100vw - 20rem) / 53.125);
+      max-width: calc(20rem + 2.625 * (100vw - 20rem) / 53.125);
     }
 }
 
